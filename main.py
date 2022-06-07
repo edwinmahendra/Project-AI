@@ -1,177 +1,177 @@
 def getConclusion(kp, das, kl, kw, ch):
-    result = "ehe"
+    result = ''
 
-    if kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'ringan':
+    if kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'tinggi':
         result = 'banjir'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'ringan':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'ringan':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'ringan':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'sedang' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'sedang' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'sedang' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'sedang' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'sedang' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'sedang' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'tinggi' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'tinggi' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'curam' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'sedang' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'sedang' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'sedang' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'sedang' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'sedang' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'sedang' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'kecil' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'sedang' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'sedang' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'sedang' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'sedang' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'sedang' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'sedang' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'tinggi' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'tinggi' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'curam' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'sedang' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'sedang' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'sedang' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'sedang' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'tinggi' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'landai' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'landai' and kw == 'tinggi' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'rendah' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'sedang' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'sedang' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'sedang' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'sedang' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'sedang' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'sedang' and ch == 'tinggi':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'tinggi' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'tinggi' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'tinggi' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'tinggi' and ch == 'sedang':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'curam' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'rendah':
         result = 'aman'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
-    elif kp == 'rendah' and das == 'tinggi' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
+    elif kp == 'tidak padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'aman'
-    elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'ringan':
+    elif kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
     elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'sedang':
         result = 'banjir'
     elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'tinggi':
         result = 'banjir'
-    elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'ringan':
+    elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'rendah':
         result = 'rawan'
     elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'sedang':
         result = 'banjir'
     elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
         result = 'banjir'
-    elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'ringan':
+    elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
         result = 'rawan'
     elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'sedang':
         result = 'rawan'
     elif kp == 'padat' and das == 'kecil' and kl == 'landai' and kw == 'tinggi' and ch == 'tinggi':
         result = 'banjir'
-    elif kp == 'padat' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'ringan':
+    elif kp == 'padat' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
     elif kp == 'padat' and das == 'kecil' and kl == 'curam' and kw == 'rendah' and ch == 'sedang':
         result = 'rawan'
@@ -249,6 +249,12 @@ def getConclusion(kp, das, kl, kw, ch):
         result = 'rawan'
     elif kp == 'padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'rendah' and ch == 'tinggi':
         result = 'rawan'
+    elif kp == 'padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'sedang' and ch == 'rendah':
+        result = 'rawan'
+    elif kp == 'padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'sedang' and ch == 'sedang':
+        result = 'rawan'
+    elif kp == 'padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'sedang' and ch == 'tinggi':
+        result = 'rawan'
     elif kp == 'padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'rendah':
         result = 'rawan'
     elif kp == 'padat' and das == 'sedang' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'sedang':
@@ -306,15 +312,14 @@ def getConclusion(kp, das, kl, kw, ch):
     elif kp == 'padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'rawan'
 
-    print("Prediksi : " + result)
+    print("Prediksi : ", result)
 
 def getResult(kp, das, kl, kw, ch):
     kepadatan_penduduk = ''
     daerah_sungai = ''
-    kemiringan_lereng = ''
+    kemirendah_lereng = ''
     ketinggian_wilayah = ''
     curah_hujan = ''
-    banjir = ''
 
 #parameter kepadatan penduduk
     if kp >= 1 and kp <= 500:
@@ -331,13 +336,13 @@ def getResult(kp, das, kl, kw, ch):
     elif das > 500000 :
         daerah_sungai = "besar"
 
-#parameter kemiringan lereng
+#parameter kemirendah lereng
     if kl >= 0 and kl <= 15 :
-        kemiringan_lereng = "landai"
+        kemirendah_lereng = "landai"
     elif kl >= 16 and kl <= 40 :
-        kemiringan_lereng = "curam"
+        kemirendah_lereng = "curam"
     elif kl > 40 :
-        kemiringan_lereng = "sangat curam"
+        kemirendah_lereng = "sangat curam"
 
 #parameter ketinggian wilayah
     if kw < 175 :
@@ -358,18 +363,30 @@ def getResult(kp, das, kl, kw, ch):
     temp = {
         'kepadatan_penduduk':kepadatan_penduduk,
         'daerah_sungai': daerah_sungai,
-        'kemiringan_lereng': kemiringan_lereng,
+        'kemirendah_lereng': kemirendah_lereng,
         'ketinggian_wilayah': ketinggian_wilayah,
         'curah_hujan': curah_hujan
     }
 
     print(temp)
-    getConclusion(kepadatan_penduduk, daerah_sungai, kemiringan_lereng, ketinggian_wilayah, curah_hujan)
+    getConclusion(kepadatan_penduduk, daerah_sungai, kemirendah_lereng, ketinggian_wilayah, curah_hujan)
 
 if __name__ == '__main__':
-    kp = int(input('Masukkan Kepadatan Penduduk: (jiwa/km2)'))
-    das = int(input('Masukkan Daerah Aliran Sungai: (ha)'))
-    kl = int(input("Masukkan Kemiringan Lereng: (%)"))
-    kw = int(input("Masukkan Ketinggian Wilayah: (mdpl)"))
-    ch = int(input("Masukkan Curah Hujan: (mm/hari)"))
+    kp = int(input('Masukkan Kepadatan Penduduk (jiwa/km2) : '))
+    das = int(input('Masukkan Daerah Aliran Sungai (ha) : '))
+    kl = int(input("Masukkan Kemirendah Lereng (%) : "))
+    kw = int(input("Masukkan Ketinggian Wilayah (mdpl) : "))
+    ch = int(input("Masukkan Curah Hujan (mm/hari) : "))
     getResult(kp, das, kl, kw, ch)
+
+    # test case 1
+    # elif kp == 'padat' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
+    #     result = 'banjir'
+
+    # test case 2
+    #     if kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
+    #         result = 'rawan'
+
+    # elif kp == 'padat' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
+    #     result = 'aman'
+
