@@ -1,5 +1,5 @@
-def getConclusion(kp, das, kl, kw, ch):
-    result = ''
+def getConclusion(kp, das, kl, kw, ch, temp):
+    result = ""
 
     if kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
         result = 'rawan'
@@ -312,14 +312,23 @@ def getConclusion(kp, das, kl, kw, ch):
     elif kp == 'padat' and das == 'tinggi' and kl == 'sangat curam' and kw == 'tinggi' and ch == 'tinggi':
         result = 'rawan'
 
-    print("Prediksi : ", result)
+    temp['result'] = result
+
+    return temp
 
 def getResult(kp, das, kl, kw, ch):
     kepadatan_penduduk = ''
     daerah_sungai = ''
-    kemirendah_lereng = ''
+    kemiringan_lereng = ''
     ketinggian_wilayah = ''
     curah_hujan = ''
+    banjir = ''
+
+    kp = int(kp)
+    das = int(das)
+    kl = int(kl)
+    kw = int(kw)
+    ch = int(ch)
 
 #parameter kepadatan penduduk
     if kp >= 1 and kp <= 500:
@@ -336,16 +345,16 @@ def getResult(kp, das, kl, kw, ch):
     elif das > 500000 :
         daerah_sungai = "besar"
 
-#parameter kemirendah lereng
+#parameter kemiringan lereng
     if kl >= 0 and kl <= 15 :
-        kemirendah_lereng = "landai"
+        kemiringan_lereng = "landai"
     elif kl >= 16 and kl <= 40 :
-        kemirendah_lereng = "curam"
+        kemiringan_lereng = "curam"
     elif kl > 40 :
-        kemirendah_lereng = "sangat curam"
+        kemiringan_lereng = "sangat curam"
 
 #parameter ketinggian wilayah
-    if kw < 175 :
+    if kw >= 1 and kw < 175 :
         ketinggian_wilayah = "rendah"
     elif kw >= 175 and kw <= 300 :
         ketinggian_wilayah = "sedang"
@@ -353,7 +362,7 @@ def getResult(kp, das, kl, kw, ch):
         ketinggian_wilayah = "tinggi"
 
 #parameter curah hujan
-    if ch < 20 :
+    if ch >= 1 and ch < 20 :
         curah_hujan = "rendah"
     elif ch >= 20 and ch <= 90 :
         curah_hujan = "sedang"
@@ -363,30 +372,20 @@ def getResult(kp, das, kl, kw, ch):
     temp = {
         'kepadatan_penduduk':kepadatan_penduduk,
         'daerah_sungai': daerah_sungai,
-        'kemirendah_lereng': kemirendah_lereng,
+        'kemiringan_lereng': kemiringan_lereng,
         'ketinggian_wilayah': ketinggian_wilayah,
         'curah_hujan': curah_hujan
     }
 
-    print(temp)
-    getConclusion(kepadatan_penduduk, daerah_sungai, kemirendah_lereng, ketinggian_wilayah, curah_hujan)
+    return getConclusion(kepadatan_penduduk, daerah_sungai, kemiringan_lereng, ketinggian_wilayah, curah_hujan, temp)
 
 if __name__ == '__main__':
-    kp = int(input('Masukkan Kepadatan Penduduk (jiwa/km2) : '))
-    das = int(input('Masukkan Daerah Aliran Sungai (ha) : '))
-    kl = int(input("Masukkan Kemirendah Lereng (%) : "))
-    kw = int(input("Masukkan Ketinggian Wilayah (mdpl) : "))
-    ch = int(input("Masukkan Curah Hujan (mm/hari) : "))
-    getResult(kp, das, kl, kw, ch)
+    kp = int(input('Masukkan Kepadatan Penduduk: (jiwa/km2) '))
+    das = int(input('Masukkan Daerah Aliran Sungai: (ha) '))
+    kl = int(input("Masukkan Kemiringan Lereng: (%) "))
+    kw = int(input("Masukkan Ketinggian Wilayah: (mdpl) "))
+    ch = int(input("Masukkan Curah Hujan: (mm/hari) "))
 
-    # test case 1
-    # elif kp == 'padat' and das == 'sedang' and kl == 'landai' and kw == 'sedang' and ch == 'tinggi':
-    #     result = 'banjir'
-
-    # test case 2
-    #     if kp == 'tidak padat' and das == 'kecil' and kl == 'landai' and kw == 'rendah' and ch == 'rendah':
-    #         result = 'rawan'
-
-    # elif kp == 'padat' and das == 'sedang' and kl == 'landai' and kw == 'tinggi' and ch == 'rendah':
-    #     result = 'aman'
-
+    hasil = getResult(kp, das, kl, kw, ch)
+    print(hasil)
+    print("Prediksi : ", hasil['result'])
