@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rawan Banjir</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>API Rawan Banjir</h1>
+    <p>Anda bisa menggunakan API dengan URL ini port 5000 /conclude dengan method POST</p>
+    <p>Kirimkan data parameter dengan json format</p>
+    <img src="img.jpg" alt="json">
+
+    <table>
+        <tr>
+            <td>
+                <label for="kepadatan_penduduk">Kepadatan Penduduk</label>
+            </td>
+            <td>
+                <input type="number" id="kepadatan_penduduk" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="daerah_sungai">Daerah Sungai</label>
+            </td>
+            <td>
+                <input type="number" id="daerah_sungai" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="kemiringan_lereng">Kemiringan Lereng</label>
+            </td>
+            <td>
+                <input type="number" id="kemiringan_lereng" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="ketinggian_wilayah">Ketinggian Wilayah</label>
+            </td>
+            <td>
+                <input type="number" id="ketinggian_wilayah" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="curah_hujan">Curah Hujan</label>
+            </td>
+            <td>
+                <input type="number" id="curah_hujan" >
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" onclick="send()" >
+            </td>
+        </tr>
+    </table>    
+
+    <p id="result" style="color:green"></p>
+
+</body>
+<script>
+    function send(){
+        var result = document.querySelector('.result');
+        var kepadatan_penduduk = document.querySelector('#kepadatan_penduduk');
+        var daerah_sungai= document.querySelector('#daerah_sungai');
+        var kemiringan_lereng = document.querySelector('#kemiringan_lereng');
+        var ketinggian_wilayah = document.querySelector('#ketinggian_wilayah');
+        var curah_hujan = document.querySelector('#curah_hujan');
+
+        $.ajax({
+            url: 'http://localhost:5000/conclude',
+            contentType:"application/json",
+            type: 'post',
+            data: JSON.stringify({
+                "kepadatan_penduduk": kepadatan_penduduk.value,
+                "daerah_sungai": daerah_sungai.value,
+                "kemiringan_lereng": kemiringan_lereng.value,
+                "ketinggian_wilayah": ketinggian_wilayah.value,
+                "curah_hujan": curah_hujan.value
+            }),
+            success: function(response){
+                console.log(response);
+                $('#result').html(
+                    "Kepadatan Penduduk : "+response.kepadatan_penduduk+"<br>"+
+                    "Daerah Sungai : "+response.daerah_sungai+"<br>"+
+                    "Kemiringan Lereng : "+response.kemiringan_lereng+"<br>"+
+                    "Ketinggian Wilayah : "+response.ketinggian_wilayah+"<br>"+
+                    "Curah Hujan : "+response.curah_hujan+"<br>"+
+                    "Aman : "+response.aman+"<br>"+
+                    "Rawan : "+response.rawan+"<br>"+
+                    "Banjir : "+response.banjir+"<br>"
+                );
+            }
+        });
+    }
+</script>
+</html>
